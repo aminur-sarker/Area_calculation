@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genious</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main>
+
+        <!-- card1 -->
+
+        <section class="flex flex-cols lg:flex-rows gap-6">
+            <div class="flex-1 flex-rows grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <!--Triangle card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Triangle</h2>
+                        <h3>Area(A) = 0.5 * b * h</h3>
+                        <div class="flex flex-rows">
+                            <input id="triangleBase" type="text" class="border w-24 ml-4" placeholder="base"><span>cm</span>
+                            <input id="triangleHeight" type="text" class="border w-24 ml-4" placeholder="height"><span>cm</span>
+                        </div>
+                        <p>Area: <span id="areaTriangleValue">0</span> cm <sup>2</sup> </p>
+                        <div class="card-actions">
+                            <button id="triangle=btn" class="btn btn-primary w-fit">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rectangle card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-16">
+                        <img src="/images/rectangle.png" alt="image" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center ">
+                        <h2 class="card-title text-3xl">Rectangle</h2>
+                        <h3>Area (A) = W * L</h3>
+                        <div class="flex flex-rows">
+                            <input id="rectangleWidth" type="text" class="border w-24 ml-4" placeholder="width"> <span> cm</span>
+                            <input id="rectangleLength" type="text" class="border w-24 ml-4" placeholder="length"> <span> cm</span>
+                        </div>
+                        <p>Area: <span id="areaRectangleValue">0</span> cm <sup>2</sup></p>
+                        <div class="card-actions">
+                            <button id="rectangle-btn" class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Parallelogram card -->
+
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-20">
+                        <img src="/images/parallelogram.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                   <div class="card-body items-center text-center ">
+                        <h2 class="card-title text-3xl">Parallelogram</h2>
+                        <h3>Area(A) = b * h</h3>
+                        <div class="flex flex-rows" >
+                            <input id="parallelogramBase" type="text" class="border w-24 ml-4" placeholder="base"><span>cm</span>
+                            <input id="parallelogramHeight" type="text" class="border w-24 ml-4" placeholder="height"><span>cm</span>
+                        </div>
+                        <p>Area: <span id="areaParallelogramValue">0</span> cm <sup>2</sup></p>
+                        <div class="card-actions">
+                            <button id="parallelogram-btn" class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-[300px]">
+                <div class=" text-3xl">Area Calculation</div>
+            </div>
+        </section>
+
+        <section class="flex flex-cols lg:flex-rows gap-6 mt-4">
+            <div class="flex-1 flex-rows grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                <!-- 1st card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/rhombus.png" alt="image" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Rhombus</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/pentagon.png" alt="image" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Pentagon</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third card -->
+
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/ellipse.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-3xl">Ellipse</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="js/jsValue.js"></script>
+
+</body>
+
+</html>
